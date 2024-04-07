@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1450px;
+            height: 750px;
+            background-color: beige;
+            border: 5px solid blue;
+        }
+        .box{
+            text-align: center;
+            font-size: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 350px;
+            height: 80px;
+            background-color: coral;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+            @keyframes rightMovement {
+                from{
+                    top: 0;
+                    left: 0;
+                }
+                to{
+                    top: 0;
+                    left:900px;
+                }
+                
+            }
+        
+        #box2{
+    
+            text-align: center;
+            font-size: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 350px;
+            height: 80px;
+            background-color: coral;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running leftMovement;
+        }
+            @keyframes leftMovement {
+                from{
+                    top: 450px;
+                    left:0px;
+                }
+                to{
+                    top:450px;
+                    left: 900px;
+                }
+                
+            }
+            #circle{
+                text-align: center;
+               font-size: 30px;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                border: 5px solid purple;
+                border-radius: 50px;
+                margin: 10px;
+                position: relative;
+                top: 30%;
+                left: 40%;
+                text-emphasis-color: rgb(0, 255, 26);
+                animation : 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+            }
+            @keyframes circleMovement{
+                0%{
+                    top: 1%;
+                    left: 5%;
+                }
+                30%{
+                    top: 5%;
+                    left: 90%;
+                }
+                60%{
+                    top: 70%;
+                    left: 10%;
+
+                }
+
+                100%{
+                    top: 50%;
+                    left: 70%;
+
+                }
+            }
+  </style>
+</head>
+<body>
+    <div class="container">
+            <div class="box">Rahul</div>
+            <div id="circle"> CR</div>
+            <div id="box2">Abhishek</div>
+    </div>
+</body>
+</html>
